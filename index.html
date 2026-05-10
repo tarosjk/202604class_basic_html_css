@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>架空のカフェ - デモサイト</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- セクショニングコンテンツ (header, nav) -->
+    <header class="header">
+        <div class="logo">
+            <a href="#">Cafe Sample</a>
+        </div>
+        <nav class="nav">
+            <!-- リスト要素 (ul, li) -->
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <!-- aタグを使ったリンク設定 (target属性を含む) -->
+                <li><a href="https://example.com" target="_blank" rel="noopener noreferrer">Online Shop</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- メインビジュアル -->
+        <div class="main-visual">
+            <!-- pictureタグを使ったレスポンシブ画像切替 -->
+            <picture>
+                <!-- 800px以上でPC用画像を表示 -->
+                <source media="(min-width: 800px)" srcset="images/hero_desktop.png">
+                <!-- 800px未満でスマホ用画像を表示 -->
+                <img src="images/hero_mobile.png" alt="カフェの温かい店内">
+            </picture>
+            
+            <!-- positionプロパティによる自由なレイアウト -->
+            <div class="main-visual-text">
+                <h2>A perfect cup<br>for your relaxing time.</h2>
+                <p>至福のひとときを、こだわりの一杯と。</p>
+            </div>
+        </div>
+
+        <!-- セクショニングコンテンツ (section) -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2>About Us</h2>
+                <p>当店は、世界中から厳選したコーヒー豆を自家焙煎している架空のカフェです。<br>落ち着いた空間で、日常を忘れてゆったりとした時間をお過ごしください。</p>
+            </div>
+        </section>
+
+        <!-- セクショニングコンテンツ (section) -->
+        <section id="menu" class="menu-section">
+            <div class="container">
+                <h2>Menu</h2>
+                <p>おすすめのメニューをご紹介します。</p>
+                
+                <!-- flexboxを使ったレイアウト -->
+                <div class="menu-list">
+                    <div class="menu-card">
+                        <!-- object-fitを使った画像の設定 -->
+                        <img src="images/coffee.png" alt="ドリップコーヒー" class="menu-img">
+                        <div class="menu-info">
+                            <h3>Specialty Coffee</h3>
+                            <p>自家焙煎のこだわりのコーヒー。</p>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <!-- object-fitを使った画像の設定 -->
+                        <img src="images/cake.png" alt="チョコレートケーキ" class="menu-img">
+                        <div class="menu-info">
+                            <h3>Chocolate Cake</h3>
+                            <p>コーヒーに合う濃厚なケーキ。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- セクショニングコンテンツ (footer) -->
+    <footer class="footer">
+        <p>&copy; 2026 Cafe Sample All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
