@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>架空のカフェ - デモサイト</title>
+    <title>Cafe Sample - デモサイト</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -32,9 +32,9 @@
             <!-- pictureタグを使ったレスポンシブ画像切替 -->
             <picture>
                 <!-- 800px以上でPC用画像を表示 -->
-                <source media="(min-width: 800px)" srcset="images/hero_desktop.png">
+                <source media="(min-width: 800px)" srcset="img/hero_desktop.png">
                 <!-- 800px未満でスマホ用画像を表示 -->
-                <img src="images/hero_mobile.png" alt="カフェの温かい店内">
+                <img src="img/hero_mobile.png" alt="カフェの温かい店内">
             </picture>
 
             <!-- positionプロパティによる自由なレイアウト -->
@@ -56,21 +56,21 @@
         <section id="menu" class="menu-section">
             <div class="container">
                 <h2>Menu</h2>
-                <p>おすすめのメニューをご紹介します。</p>
+                <p class="menu-description">おすすめのメニューをご紹介します。</p>
 
                 <!-- flexboxを使ったレイアウト -->
                 <div class="menu-list">
                     <div class="menu-card">
                         <!-- object-fitを使った画像の設定 -->
-                        <img src="images/coffee.png" alt="ドリップコーヒー" class="menu-img">
+                        <img src="img/coffee.png" alt="ドリップコーヒー" class="menu-img">
                         <div class="menu-info">
                             <h3>Specialty Coffee</h3>
-                            <p>自家焙煎のこだわりのコーヒー。</p>
+                            <p>自家焙煎 こだわりのコーヒー。</p>
                         </div>
                     </div>
                     <div class="menu-card">
                         <!-- object-fitを使った画像の設定 -->
-                        <img src="images/cake.png" alt="チョコレートケーキ" class="menu-img">
+                        <img src="img/cake.png" alt="チョコレートケーキ" class="menu-img">
                         <div class="menu-info">
                             <h3>Chocolate Cake</h3>
                             <p>コーヒーに合う濃厚なケーキ。</p>
